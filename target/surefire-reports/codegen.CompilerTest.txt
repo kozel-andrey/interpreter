@@ -1,8 +1,8 @@
 -------------------------------------------------------------------------------
 Test set: codegen.CompilerTest
 -------------------------------------------------------------------------------
-Tests run: 19, Failures: 0, Errors: 8, Skipped: 0, Time elapsed: 0.058 sec <<< FAILURE!
-testClassBasic1(codegen.CompilerTest)  Time elapsed: 0.006 sec  <<< ERROR!
+Tests run: 19, Failures: 0, Errors: 8, Skipped: 0, Time elapsed: 0.091 sec <<< FAILURE!
+testClassBasic1(codegen.CompilerTest)  Time elapsed: 0.009 sec  <<< ERROR!
 java.lang.RuntimeException: Error: Unable to parse program
 	at compiler.Compiler.compile(Compiler.java:11)
 	at codegen.CompilerTest.testClassBasic1(CompilerTest.java:411)
@@ -68,7 +68,7 @@ java.lang.RuntimeException: Error: Unable to parse program
 	at org.apache.maven.surefire.booter.SurefireStarter.invokeProvider(SurefireStarter.java:175)
 	at org.apache.maven.surefire.booter.SurefireStarter.runSuitesInProcessWhenForked(SurefireStarter.java:107)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:68)
-testSuper(codegen.CompilerTest)  Time elapsed: 0.001 sec  <<< ERROR!
+testSuper(codegen.CompilerTest)  Time elapsed: 0.002 sec  <<< ERROR!
 java.lang.RuntimeException: Error: Unable to parse program
 	at compiler.Compiler.compile(Compiler.java:11)
 	at codegen.CompilerTest.testSuper(CompilerTest.java:299)
@@ -233,7 +233,7 @@ java.lang.RuntimeException: Error: Unable to parse program
 	at org.apache.maven.surefire.booter.SurefireStarter.invokeProvider(SurefireStarter.java:175)
 	at org.apache.maven.surefire.booter.SurefireStarter.runSuitesInProcessWhenForked(SurefireStarter.java:107)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:68)
-testClass3(codegen.CompilerTest)  Time elapsed: 0.001 sec  <<< ERROR!
+testClass3(codegen.CompilerTest)  Time elapsed: 0 sec  <<< ERROR!
 java.lang.RuntimeException: Error: Unable to parse program
 	at compiler.Compiler.compile(Compiler.java:11)
 	at codegen.CompilerTest.testClass3(CompilerTest.java:493)

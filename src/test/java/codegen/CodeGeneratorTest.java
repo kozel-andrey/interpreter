@@ -19,15 +19,15 @@ public class CodeGeneratorTest {
         new Composite(new Statement[] {new Assignment("temp", new Variable("b")),
             new Assignment("b", new Binary(new Variable("a"), Binop.Modulo, new Variable("b"))),
             new Assignment("a", new Variable("temp"))}));
-    Function ggt = new Function(Type.Int, "ggt",
-        new SingleDeclaration[] {new SingleDeclaration(Type.Int, "a"),
-            new SingleDeclaration(Type.Int, "b")},
-        new Declaration[] {new Declaration(Type.Int, new String[] {"temp"})},
+    Function ggt = new Function(new Type("int"), "ggt",
+        new SingleDeclaration[] {new SingleDeclaration(new Type("int"), "a"),
+            new SingleDeclaration(new Type("int"), "b")},
+        new Declaration[] {new Declaration(new Type("int"), new String[] {"temp"})},
         new Statement[] {ggtSwap, ggtWhile, new Return(new Variable("a"))});
-    Function mainFunctionGgt = new Function(Type.Int, "main", new SingleDeclaration[] {},
+    Function mainFunctionGgt = new Function(new Type("int"), "main", new SingleDeclaration[] {},
         new Declaration[] {}, new Statement[] {
             new Return(new Call("ggt", new Expression[] {new Number(a), new Number(b)}))});
-    Program ggtProgram = new Program(new Function[] {ggt, mainFunctionGgt});
+    Program ggtProgram = new Program(new Function[] {ggt, mainFunctionGgt}, new CustomClass[0]);
     return ggtProgram;
   }
 
@@ -37,13 +37,13 @@ public class CodeGeneratorTest {
     Statement fakRec =
         new Return(new Binary(new Variable("n"), Binop.MultiplicationOperator, new Call("fak",
             new Expression[] {new Binary(new Variable("n"), Binop.Minus, new Number(1))})));
-    Function fakFunc = new Function(Type.Int, "fak",
-        new SingleDeclaration[] {new SingleDeclaration(Type.Int, "n")}, new Declaration[] {},
+    Function fakFunc = new Function(new Type("int"), "fak",
+        new SingleDeclaration[] {new SingleDeclaration(new Type("int"), "n")}, new Declaration[] {},
         new Statement[] {fakRecEnd, fakRec});
     Function mainFunctionFak =
-        new Function(Type.Int, "main", new SingleDeclaration[] {}, new Declaration[] {},
+        new Function(new Type("int"), "main", new SingleDeclaration[] {}, new Declaration[] {},
             new Statement[] {new Return(new Call("fak", new Expression[] {new Number(n)}))});
-    Program fakProgram = new Program(new Function[] {mainFunctionFak, fakFunc});
+    Program fakProgram = new Program(new Function[] {mainFunctionFak, fakFunc}, new CustomClass[0]);
     return fakProgram;
   }
 

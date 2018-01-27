@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite tests="17" failures="0" name="codegen.FormatTest" time="0.083" errors="0" skipped="0">
+<testsuite tests="17" failures="0" name="codegen.FormatTest" time="0.104" errors="0" skipped="0">
   <properties>
     <property name="idea.version" value="2016.1.3"/>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
@@ -11,7 +11,7 @@
     <property name="guice.disable.misplaced.annotation.check" value="true"/>
     <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
     <property name="file.encoding.pkg" value="sun.io"/>
-    <property name="idea.launcher.port" value="7536"/>
+    <property name="idea.launcher.port" value="7533"/>
     <property name="user.country" value="RU"/>
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="sun.os.patch.level" value="unknown"/>
@@ -44,7 +44,7 @@
     <property name="java.vm.specification.version" value="1.8"/>
     <property name="sun.arch.data.model" value="64"/>
     <property name="java.home" value="/usr/lib/jvm/java-8-oracle/jre"/>
-    <property name="sun.java.command" value="com.intellij.rt.execution.application.AppMain org.codehaus.classworlds.Launcher -Didea.version=2016.1.3 test"/>
+    <property name="sun.java.command" value="com.intellij.rt.execution.application.AppMain org.codehaus.classworlds.Launcher -Didea.version=2016.1.3 package"/>
     <property name="java.specification.vendor" value="Oracle Corporation"/>
     <property name="user.language" value="ru"/>
     <property name="awt.toolkit" value="sun.awt.X11.XToolkit"/>
@@ -62,21 +62,21 @@
     <property name="sun.desktop" value="gnome"/>
     <property name="sun.cpu.isalist" value=""/>
   </properties>
-  <testcase classname="codegen.FormatTest" name="testExpression10" time="0.005"/>
+  <testcase classname="codegen.FormatTest" name="testExpression10" time="0.004"/>
   <testcase classname="codegen.FormatTest" name="testExpression11" time="0"/>
   <testcase classname="codegen.FormatTest" name="testCondition1" time="0"/>
   <testcase classname="codegen.FormatTest" name="testCondition2" time="0"/>
   <testcase classname="codegen.FormatTest" name="testCondition3" time="0"/>
   <testcase classname="codegen.FormatTest" name="testCondition4" time="0"/>
   <testcase classname="codegen.FormatTest" name="testCondition5" time="0"/>
-  <testcase classname="codegen.FormatTest" name="testExpression5P5" time="0.001"/>
+  <testcase classname="codegen.FormatTest" name="testExpression5P5" time="0"/>
   <testcase classname="codegen.FormatTest" name="testExpression1" time="0"/>
   <testcase classname="codegen.FormatTest" name="testExpression2" time="0"/>
-  <testcase classname="codegen.FormatTest" name="testExpression3" time="0.001"/>
+  <testcase classname="codegen.FormatTest" name="testExpression3" time="0"/>
   <testcase classname="codegen.FormatTest" name="testExpression4" time="0"/>
   <testcase classname="codegen.FormatTest" name="testExpression5" time="0"/>
-  <testcase classname="codegen.FormatTest" name="testExpression6" time="0"/>
-  <testcase classname="codegen.FormatTest" name="testExpression7" time="0"/>
-  <testcase classname="codegen.FormatTest" name="testExpression8" time="0"/>
+  <testcase classname="codegen.FormatTest" name="testExpression6" time="0.001"/>
+  <testcase classname="codegen.FormatTest" name="testExpression7" time="0.001"/>
+  <testcase classname="codegen.FormatTest" name="testExpression8" time="0.002"/>
   <testcase classname="codegen.FormatTest" name="testExpression9" time="0"/>
 </testsuite>

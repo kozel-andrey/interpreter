@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite tests="11" failures="0" name="compiler.CompilerTest" time="0.032" errors="0" skipped="0">
+<testsuite tests="11" failures="0" name="compiler.CompilerTest" time="0.029" errors="0" skipped="0">
   <properties>
     <property name="idea.version" value="2016.1.3"/>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
@@ -11,7 +11,7 @@
     <property name="guice.disable.misplaced.annotation.check" value="true"/>
     <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
     <property name="file.encoding.pkg" value="sun.io"/>
-    <property name="idea.launcher.port" value="7536"/>
+    <property name="idea.launcher.port" value="7533"/>
     <property name="user.country" value="RU"/>
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="sun.os.patch.level" value="unknown"/>
@@ -44,7 +44,7 @@
     <property name="java.vm.specification.version" value="1.8"/>
     <property name="sun.arch.data.model" value="64"/>
     <property name="java.home" value="/usr/lib/jvm/java-8-oracle/jre"/>
-    <property name="sun.java.command" value="com.intellij.rt.execution.application.AppMain org.codehaus.classworlds.Launcher -Didea.version=2016.1.3 test"/>
+    <property name="sun.java.command" value="com.intellij.rt.execution.application.AppMain org.codehaus.classworlds.Launcher -Didea.version=2016.1.3 package"/>
     <property name="java.specification.vendor" value="Oracle Corporation"/>
     <property name="user.language" value="ru"/>
     <property name="awt.toolkit" value="sun.awt.X11.XToolkit"/>
@@ -62,15 +62,15 @@
     <property name="sun.desktop" value="gnome"/>
     <property name="sun.cpu.isalist" value=""/>
   </properties>
-  <testcase classname="compiler.CompilerTest" name="testArraysFunctionReturnsArray" time="0.001"/>
+  <testcase classname="compiler.CompilerTest" name="testArraysFunctionReturnsArray" time="0"/>
   <testcase classname="compiler.CompilerTest" name="testDoubleDefinition" time="0"/>
-  <testcase classname="compiler.CompilerTest" name="testInvalidCall" time="0.001"/>
+  <testcase classname="compiler.CompilerTest" name="testInvalidCall" time="0"/>
   <testcase classname="compiler.CompilerTest" name="testUndefinedVariable" time="0.001"/>
   <testcase classname="compiler.CompilerTest" name="testFak" time="0"/>
-  <testcase classname="compiler.CompilerTest" name="testGGT" time="0.001"/>
-  <testcase classname="compiler.CompilerTest" name="testPrim" time="0.015"/>
-  <testcase classname="compiler.CompilerTest" name="testArraysFunction" time="0.005"/>
+  <testcase classname="compiler.CompilerTest" name="testGGT" time="0"/>
+  <testcase classname="compiler.CompilerTest" name="testPrim" time="0.016"/>
+  <testcase classname="compiler.CompilerTest" name="testArraysFunction" time="0.001"/>
   <testcase classname="compiler.CompilerTest" name="testArrayLength" time="0.003"/>
-  <testcase classname="compiler.CompilerTest" name="testPalindrome" time="0"/>
-  <testcase classname="compiler.CompilerTest" name="testArraysBasic" time="0"/>
+  <testcase classname="compiler.CompilerTest" name="testPalindrome" time="0.002"/>
+  <testcase classname="compiler.CompilerTest" name="testArraysBasic" time="0.001"/>
 </testsuite>

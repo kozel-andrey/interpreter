@@ -4,6 +4,7 @@ import static org.junit.Assert.assertEquals;
 import compiler.Compiler;
 import org.junit.Test;
 import interpreter.Interpreter;
+import parser.Parser;
 
 public class CompilerTest {
   @Test
@@ -487,9 +488,9 @@ public class CompilerTest {
         "  bar = new Bar();\n" + 
         "  return bar.test(foo);\n" + 
         "}";
-//    Parser p = new Parser(code);
-//    Program ast = p.parse();
-//    System.out.println(ast);
+    Parser p = new Parser(code);
+    Program ast = p.parse();
+    System.out.println(ast);
     int[] assembly = Compiler.compile(code);
 //    System.out.println("######################");
 //    System.out.println(Interpreter.programToString(assembly));

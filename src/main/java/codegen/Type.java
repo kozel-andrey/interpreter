@@ -1,15 +1,14 @@
 package codegen;
 
-public enum Type {
-  Int, IntArray;
+public class Type {
+
+  private String code;
+
+  public Type(String code) {
+    this.code = code;
+  }
 
   String codeString() {
-    switch (this) {
-      case Int:
-        return "int";
-      case IntArray:
-        return "int[]";
-    }
-    throw new RuntimeException("Unreachable");
+    return code;
   }
 }

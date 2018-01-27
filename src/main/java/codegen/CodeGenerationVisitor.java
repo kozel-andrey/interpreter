@@ -406,6 +406,26 @@ public class CodeGenerationVisitor extends Visitor {
   }
 
   @Override
+  public void visit(CustomClass type) {
+
+  }
+
+  @Override
+  public void visit(Constructor constructor) {
+
+  }
+
+  @Override
+  public void visit(ObjectInitializer objectInitializer) {
+
+  }
+
+  @Override
+  public void visit(MethodCall call) {
+
+  }
+
+  @Override
   public void visit(Program program) {
     // Das Programm beginnt mit einem Sprung zur Hauptfunktion
     int ldiMainAddress = addDummy();
