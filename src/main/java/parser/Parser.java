@@ -89,6 +89,7 @@ public class Parser {
             case "else":
             case "read":
             case "write":
+            case "this":
                 return true;
             default:
                 return false;
@@ -300,6 +301,9 @@ public class Parser {
             } else {
                 return new Variable(name);
             }
+        } else if(tokens[from].equals("this")) {
+            from += 2;
+            return new MethodCall(new Variable("this"), parseExpression());
         }
         from = before;
         // (<expr>)
@@ -539,6 +543,7 @@ public class Parser {
                 return new Composite(new Statement[]{});
             }
             case "{": {
+                from++;
                 ArrayList<Statement> statements = parseStatements();
                 if (tokens[from++].equals("}")) {
                     return new Composite(statements.toArray(new Statement[]{}));
@@ -582,7 +587,22 @@ public class Parser {
                     return null;
                 return new Return(exp);
             }
+            case "this": {
+                from += 2;
+                Expression exp = parseExpression();
+                if(exp == null)
+                    return null;
+
+                return new StatementExpression("this", exp);
+            }
             default: {
+                if(tokens[from + 1] .equals(".")) {
+                    Expression exp = parseExpression();
+                    if(exp == null)
+                        return null;
+
+                    return new StatementExpression(tokens[from++], exp);
+                }
                 Statement ass = parseAssigment();
                 if (ass != null) {
                     if (tokens[from].equals(";")) {

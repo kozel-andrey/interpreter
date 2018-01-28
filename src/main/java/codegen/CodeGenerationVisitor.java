@@ -444,6 +444,9 @@ public class CodeGenerationVisitor extends Visitor {
       locals.clear();
       f.accept(this);
     }
+    for (CustomClass customClass : program.getClasses()) {
+      int functionStartIndex = instructions.size();
+    }
     if (!hasMain)
       throw new RuntimeException("Main function is missing.");
     // Nachdem alle Funktionen assembliert wurden, müssen wir die Instruktionen patchen, die

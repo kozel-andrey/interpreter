@@ -257,9 +257,9 @@ public class CompilerTest {
         "  if(arr[9] != 50) return 99;\n" + 
         "  return 42;\n" + 
         "}";
-//    Parser p = new Parser(code);
-//    Program ast = p.parse();
-//    System.out.println(ast);
+    Parser p = new Parser(code);
+    Program ast = p.parse();
+    System.out.println(ast);
     int[] assembly = Compiler.compile(code);
 //    System.out.println("######################");
 //    System.out.println(Interpreter.programToString(assembly));

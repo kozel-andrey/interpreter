@@ -2,16 +2,16 @@ package codegen;
 
 public class ObjectInitializer extends Expression {
 
-    private Expression expression;
+    private Expression[] expressions;
     private String functionName;
 
     public ObjectInitializer(String functionName, Expression[] expressions) {
         this.functionName = functionName;
-        this.expression = expression;
+        this.expressions = expressions;
     }
 
-    public Expression getExpression() {
-        return expression;
+    public Expression[] getExpressions() {
+        return expressions;
     }
 
     public String getFunctionName() {

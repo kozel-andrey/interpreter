@@ -386,6 +386,12 @@ public class FormatVisitor extends Visitor {
 
     @Override
     public void visit(ObjectInitializer initializer) {
-        result.append("new " + initializer.getFunctionName());
+        result.append("new " + initializer.getFunctionName() + "(");
+        for (int i = 0; i < initializer.getExpressions().length; i++) {
+            if (i > 0)
+                result.append(", ");
+            append(initializer.getExpressions()[i]);
+        }
+        result.append(')');
     }
 }
