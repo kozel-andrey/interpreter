@@ -7,7 +7,6 @@ import codegen.Number;
 
 public class Parser {
     private static final int PADDING = 3;
-    private boolean notClass;
 
     private static String[] lex(String input) {
         ArrayList<String> tokens = new ArrayList<>();
@@ -695,6 +694,8 @@ public class Parser {
         if (className == null)
             return null;
 
+        String parentName = getParentName();
+
         if (!tokens[from++].equals("{"))
             return null;
 
@@ -725,11 +726,19 @@ public class Parser {
             }
             if (tokens[from].equals("}")) {
                 from++;
-                return new CustomClass(className, declarations.toArray(new Declaration[declarations.size()]),
+                return new CustomClass(className, parentName, declarations.toArray(new Declaration[declarations.size()]),
                         constructor, functions.toArray(new Function[functions.size()]));
             }
         }
 
+    }
+
+    private String getParentName() {
+        if(tokens[from].equals("extends")) {
+            from++;
+            return tokens[from++];
+        }
+        return null;
     }
 
     private Constructor parseConstuctor(String className) {

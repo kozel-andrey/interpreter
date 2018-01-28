@@ -116,12 +116,12 @@ public class CompilerTest {
         "  sum = sum + flaeche(g6);\n" + 
         "  return sum;\n" + 
         "}";
-//    Parser p = new Parser(code);
-//    Program ast = p.parse();
-//    System.out.println(ast);
+    Parser p = new Parser(code);
+    Program ast = p.parse();
+    System.out.println(ast);
     int[] assembly = Compiler.compile(code);
-//    System.out.println("######################");
-//    System.out.println(Interpreter.programToString(assembly));
+    System.out.println("######################");
+    System.out.println(Interpreter.programToString(assembly));
     int retVal = Interpreter.execute(assembly);
     assertEquals(86, retVal);
   }
@@ -520,6 +520,8 @@ public class CompilerTest {
         "  return sum;\n" + 
         "}";
     int[] assembly = Compiler.compile(code);
+    System.out.println("######################");
+    System.out.println(Interpreter.programToString(assembly));
     int retVal = Interpreter.execute(assembly);
     assertEquals(20, retVal);
   }

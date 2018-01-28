@@ -339,6 +339,13 @@ public class FormatVisitor extends Visitor {
         indented("class");
         result.append(' ');
         result.append(type.getName());
+        if(type.getParentName() != null) {
+            result.append(' ');
+            result.append("extends");
+            result.append(' ');
+            result.append(type.getParentName());
+            result.append(' ');
+        }
         result.append(' ');
         result.append('{');
         for (int i = 0; i < type.getDeclarations().length; i++) {

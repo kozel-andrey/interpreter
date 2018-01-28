@@ -6,9 +6,11 @@ public class CustomClass implements Visitable {
     private Declaration[] declarations;
     private Constructor constructor;
     private Function[] functions;
+    private String parentName;
 
-    public CustomClass(String className, Declaration[] declarations, Constructor constructor, Function[] functions) {
-        name = className;
+    public CustomClass(String className, String parentName, Declaration[] declarations, Constructor constructor, Function[] functions) {
+        this.name = className;
+        this.parentName = parentName;
         this.declarations = declarations;
         this.constructor = constructor;
         this.functions = functions;
@@ -44,6 +46,10 @@ public class CustomClass implements Visitable {
 
     public void setFunctions(Function[] functions) {
         this.functions = functions;
+    }
+
+    public String getParentName() {
+        return parentName;
     }
 
     @Override
