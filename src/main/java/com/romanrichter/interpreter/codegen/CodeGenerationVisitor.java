@@ -1,13 +1,10 @@
 package com.romanrichter.interpreter.codegen;
 
-import jdk.nashorn.internal.parser.Token;
-
-import static com.romanrichter.interpreter.codegen.interpreter.SteckOperation.*;
-
-import java.lang.*;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
+
+import static com.romanrichter.interpreter.codegen.interpreter.SteckOperation.*;
 
 class PatchLocation {
     public final String functionName;
@@ -46,8 +43,7 @@ public class CodeGenerationVisitor extends Visitor {
      * und am Anfang von Funktionen gibt; daher gibt es nur genau einen Scope.
      */
     private HashMap<String, Integer> locals = new HashMap<String, Integer>();
-
-    private HashMap<String, Integer> classCommands = new HashMap<String, Integer>();
+    private HashMap<String, Integer> classVariables = new HashMap<String, Integer>();
     /*
      * Frame-Zellen der aktuellen Funktion. Wird für den Rücksprung benötigt.
      */
@@ -112,9 +108,13 @@ public class CodeGenerationVisitor extends Visitor {
 
     @Override
     public void visit(Variable variable) {
-        if (!locals.containsKey(variable.getName()))
+        Integer variableLocation = locals.get(variable.getName());
+
+        if (variableLocation == null)
+            variableLocation = classVariables.get(variable.getName());
+        if (variableLocation == null)
             throw new RuntimeException("Unknown variable '" + variable.getName() + "'");
-        int variableLocation = locals.get(variable.getName());
+
         add(LDS.encode(variableLocation));
     }
 
@@ -235,7 +235,10 @@ public class CodeGenerationVisitor extends Visitor {
         assignment.getExpression().accept(this);
         Integer location = locals.get(assignment.getName());
         if (location == null)
+            location = classVariables.get(assignment.getName());
+        if (location == null)
             throw new RuntimeException("Unknown variable " + assignment.getName());
+
         add(STS.encode(location));
     }
 
@@ -299,7 +302,10 @@ public class CodeGenerationVisitor extends Visitor {
         // Wir addieren 1 auf den Index, da an Offset 0 die Länge des Arrays gespeichert ist.
         add(LDI.encode(1));
         add(ADD.encode());
-        int variableLocation = locals.get(arrayAssignment.getName());
+        Integer variableLocation = locals.get(arrayAssignment.getName());
+        if(variableLocation == null)
+            variableLocation = classVariables.get(arrayAssignment.getName());
+
         add(LDS.encode(variableLocation));
         add(STH.encode());
     }
@@ -423,19 +429,22 @@ public class CodeGenerationVisitor extends Visitor {
 
     @Override
     public void visit(CustomClass customClass) {
-        classCommands.clear();
-        locals.clear();
-        classCommands.put(customClass.getName(), instructions.size());
-        locals.put("this", instructions.size());
+        locals.put("$alloc_class", instructions.size());
         classFunctions.put(customClass.getName(), new ArrayList<FunctionDesc>());
 
-        for (Declaration declaration : customClass.getDeclarations()) {
-            visitDeclarations(declaration.getNames());
+        for (Declaration d : customClass.getDeclarations()) {
+            visitDeclarations(d.getNames());
+            for (int i = 0; i < d.getNames().length; i++) {
+                if (classVariables.containsKey(d.getNames()[i]))
+                    throw new RuntimeException("Variable '" + d.getNames()[i] + "' is already defined");
+                classVariables.put(d.getNames()[i], d.getNames().length + i);
+            }
         }
 
         customClass.getConstructor().accept(this);
 
         for (Function f : customClass.getFunctions()) {
+            locals.clear();
             int functionStartIndex = instructions.size();
             classFunctions.get(customClass.getName()).add(new FunctionDesc(functionStartIndex,
                     f.getParameters().length, f.getName()));
@@ -447,12 +456,14 @@ public class CodeGenerationVisitor extends Visitor {
 
     @Override
     public void visit(Constructor constructor) {
-
+        locals.put("$t0", locals.size() + 1);
+        locals.put("$t1", locals.size() + 1);
+        add(ALLOC.encode(2));
         functions.put(constructor.getName(), new FunctionDesc(instructions.size(), constructor.getParameters().length,
                 constructor.getName()));
 
         for (Declaration d : constructor.getDeclarations()) {
-            d.accept(this);
+            visitDeclarations(d.getNames());
         }
         SingleDeclaration[] parameters = constructor.getParameters();
         for (int i = 0; i < parameters.length; i++) {

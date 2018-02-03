@@ -444,8 +444,8 @@ public class CompilerTest {
 //    Program ast = p.parse();
 //    System.out.println(ast);
     int[] assembly = Compiler.compile(code);
-//    System.out.println("######################");
-//    System.out.println(Interpreter.programToString(assembly));
+    System.out.println("######################");
+    System.out.println(Interpreter.programToString(assembly));
     int retVal = Interpreter.execute(assembly);
     assertEquals(401, retVal);
   }

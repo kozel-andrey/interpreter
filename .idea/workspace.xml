@@ -4,10 +4,6 @@
     <list default="true" id="9d5802b2-b503-429d-8cb8-075667f39cf8" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/romanrichter/interpreter/codegen/CodeGenerationVisitor.java" afterPath="$PROJECT_DIR$/src/main/java/com/romanrichter/interpreter/codegen/CodeGenerationVisitor.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/romanrichter/interpreter/codegen/FormatVisitor.java" afterPath="$PROJECT_DIR$/src/main/java/com/romanrichter/interpreter/codegen/FormatVisitor.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/romanrichter/interpreter/codegen/MethodCall.java" afterPath="$PROJECT_DIR$/src/main/java/com/romanrichter/interpreter/codegen/MethodCall.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/romanrichter/interpreter/codegen/ObjectInitializer.java" afterPath="$PROJECT_DIR$/src/main/java/com/romanrichter/interpreter/codegen/ObjectInitializer.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/romanrichter/interpreter/codegen/parser/Parser.java" afterPath="$PROJECT_DIR$/src/main/java/com/romanrichter/interpreter/codegen/parser/Parser.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/com/romanrichter/interpreter/codegen/CompilerTest.java" afterPath="$PROJECT_DIR$/src/test/java/com/romanrichter/interpreter/codegen/CompilerTest.java" />
     </list>
     <ignored path="iterpreter.iws" />
@@ -39,20 +35,36 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="CodeGenerationVisitor.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="CodeGenerationVisitor.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/romanrichter/interpreter/codegen/CodeGenerationVisitor.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="334">
-              <caret line="383" column="45" selection-start-line="383" selection-start-column="45" selection-end-line="383" selection-end-column="45" />
+            <state relative-caret-position="345">
+              <caret line="446" column="27" selection-start-line="446" selection-start-column="27" selection-end-line="446" selection-end-column="27" />
               <folding>
-                <element signature="e#1539#1556#0" expanded="true" />
-                <element signature="e#2837#2838#0" expanded="true" />
-                <element signature="e#2866#2867#0" expanded="true" />
-                <element signature="e#12197#12198#0" expanded="true" />
-                <element signature="e#12254#12255#0" expanded="true" />
-                <element signature="e#15874#15875#0" expanded="true" />
-                <element signature="e#15917#15918#0" expanded="true" />
+                <element signature="imports" expanded="true" />
+                <element signature="e#1390#1407#0" expanded="true" />
+                <element signature="e#1476#1493#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ReflectiveCallable.java" pinned="false" current-in-tab="false">
+        <entry file="jar://$MAVEN_REPOSITORY$/junit/junit/4.12/junit-4.12-sources.jar!/org/junit/internal/runners/model/ReflectiveCallable.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="216">
+              <caret line="12" column="0" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="CompilerTest.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/test/java/com/romanrichter/interpreter/codegen/CompilerTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="334">
+              <caret line="460" column="18" selection-start-line="460" selection-start-column="18" selection-end-line="460" selection-end-column="18" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -60,36 +72,12 @@
       <file leaf-file-name="Interpreter.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/romanrichter/interpreter/codegen/interpreter/Interpreter.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="231">
-              <caret line="315" column="0" selection-start-line="315" selection-start-column="0" selection-end-line="315" selection-end-column="0" />
+            <state relative-caret-position="146">
+              <caret line="268" column="0" selection-start-line="268" selection-start-column="0" selection-end-line="268" selection-end-column="0" />
               <folding>
                 <element signature="e#1534#1535#0" expanded="true" />
                 <element signature="e#1579#1580#0" expanded="true" />
-                <element signature="e#2103#2104#0" expanded="true" />
-                <element signature="e#2158#2159#0" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Constructor.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/romanrichter/interpreter/codegen/Constructor.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="324">
-              <caret line="18" column="0" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
-              <folding>
-                <element signature="e#604#605#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="CompilerTest.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/com/romanrichter/interpreter/codegen/CompilerTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="378">
-              <caret line="441" column="12" selection-start-line="441" selection-start-column="12" selection-end-line="441" selection-end-column="12" />
-              <folding />
             </state>
           </provider>
         </entry>
@@ -610,7 +598,7 @@
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
     <property name="js-jscs-nodeInterpreter" value="/usr/bin/node" />
-    <property name="SearchEverywhereHistoryKey" value="interpreter&#9;FILE&#9;file:///home/andrew/Projects/iterpreter/src/main/java/com/romanrichter/interpreter/codegen/interpreter/Interpreter.java&#10;parser&#9;FILE&#9;file:///home/andrew/Projects/iterpreter/src/main/java/com/romanrichter/interpreter/codegen/parser/Parser.java&#10;constructor&#9;PSI&#9;JAVA://com.romanrichter.interpreter.codegen.Constructor&#10;varia&#9;FILE&#9;file:///home/andrew/Projects/iterpreter/src/main/java/com/romanrichter/interpreter/codegen/Variable.java&#10;forvis&#9;FILE&#9;file:///home/andrew/Projects/iterpreter/src/main/java/com/romanrichter/interpreter/codegen/FormatVisitor.java&#10;pom&#9;FILE&#9;file:///home/andrew/Projects/iterpreter/pom.xml&#10;objinit&#9;FILE&#9;file:///home/andrew/Projects/iterpreter/src/main/java/codegen/ObjectInitializer.java&#10;call&#9;FILE&#9;file:///home/andrew/Projects/iterpreter/src/main/java/codegen/Call.java&#10;fo&#9;FILE&#9;file:///home/andrew/Projects/iterpreter/src/main/java/codegen/FormatVisitor.java&#10;binary&#9;PSI&#9;JAVA://codegen.Binary&#10;binop&#9;FILE&#9;file:///home/andrew/Projects/iterpreter/src/main/java/codegen/Binop.java&#10;code&#9;FILE&#9;file:///home/andrew/Projects/iterpreter/src/main/java/codegen/CodeGenerationVisitor.java&#10;for&#9;FILE&#9;file:///home/andrew/Projects/iterpreter/src/main/java/codegen/FormatVisitor.java&#10;arraini&#9;FILE&#9;file:///home/andrew/Projects/iterpreter/src/main/java/codegen/ArrayInitializer.java&#10;expression&#9;FILE&#9;file:///home/andrew/Projects/iterpreter/src/main/java/codegen/Expression.java&#10;variable&#9;PSI&#9;JAVA://codegen.Variable&#10;compiler&#9;FILE&#9;file:///home/andrew/Projects/iterpreter/src/main/java/compiler/Compiler.java&#10;type&#9;FILE&#9;file:///home/andrew/Projects/iterpreter/src/main/java/codegen/Type.java&#10;formavisi&#9;FILE&#9;file:///home/andrew/Projects/iterpreter/src/main/java/codegen/FormatVisitor.java&#10;cogetes&#9;FILE&#9;file:///home/andrew/Projects/iterpreter/src/test/java/codegen/CodeGeneratorTest.java" />
+    <property name="SearchEverywhereHistoryKey" value="inter&#9;FILE&#9;file:///home/andrew/Projects/iterpreter/src/main/java/com/romanrichter/interpreter/codegen/interpreter/Interpreter.java&#10;codegen&#9;FILE&#9;file:///home/andrew/Projects/iterpreter/src/main/java/com/romanrichter/interpreter/codegen/CodeGenerationVisitor.java&#10;interpreter&#9;FILE&#9;file:///home/andrew/Projects/iterpreter/src/main/java/com/romanrichter/interpreter/codegen/interpreter/Interpreter.java&#10;parser&#9;FILE&#9;file:///home/andrew/Projects/iterpreter/src/main/java/com/romanrichter/interpreter/codegen/parser/Parser.java&#10;constructor&#9;PSI&#9;JAVA://com.romanrichter.interpreter.codegen.Constructor&#10;varia&#9;FILE&#9;file:///home/andrew/Projects/iterpreter/src/main/java/com/romanrichter/interpreter/codegen/Variable.java&#10;forvis&#9;FILE&#9;file:///home/andrew/Projects/iterpreter/src/main/java/com/romanrichter/interpreter/codegen/FormatVisitor.java&#10;pom&#9;FILE&#9;file:///home/andrew/Projects/iterpreter/pom.xml&#10;objinit&#9;FILE&#9;file:///home/andrew/Projects/iterpreter/src/main/java/codegen/ObjectInitializer.java&#10;call&#9;FILE&#9;file:///home/andrew/Projects/iterpreter/src/main/java/codegen/Call.java&#10;fo&#9;FILE&#9;file:///home/andrew/Projects/iterpreter/src/main/java/codegen/FormatVisitor.java&#10;binary&#9;PSI&#9;JAVA://codegen.Binary&#10;binop&#9;FILE&#9;file:///home/andrew/Projects/iterpreter/src/main/java/codegen/Binop.java&#10;code&#9;FILE&#9;file:///home/andrew/Projects/iterpreter/src/main/java/codegen/CodeGenerationVisitor.java&#10;for&#9;FILE&#9;file:///home/andrew/Projects/iterpreter/src/main/java/codegen/FormatVisitor.java&#10;arraini&#9;FILE&#9;file:///home/andrew/Projects/iterpreter/src/main/java/codegen/ArrayInitializer.java&#10;expression&#9;FILE&#9;file:///home/andrew/Projects/iterpreter/src/main/java/codegen/Expression.java&#10;variable&#9;PSI&#9;JAVA://codegen.Variable&#10;compiler&#9;FILE&#9;file:///home/andrew/Projects/iterpreter/src/main/java/compiler/Compiler.java&#10;type&#9;FILE&#9;file:///home/andrew/Projects/iterpreter/src/main/java/codegen/Type.java&#10;formavisi&#9;FILE&#9;file:///home/andrew/Projects/iterpreter/src/main/java/codegen/FormatVisitor.java&#10;cogetes&#9;FILE&#9;file:///home/andrew/Projects/iterpreter/src/test/java/codegen/CodeGeneratorTest.java" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/java/interpreter" />
   </component>
   <component name="RecentsManager">
@@ -625,33 +613,7 @@
       <recent name="$PROJECT_DIR$/src/main/java/com/kozelandrey/interpreter" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.CompilerTest.testClassBasic2">
-    <configuration default="false" name="CompilerTest.testClass3" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="com.romanrichter.interpreter.codegen.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <module name="iterpreter" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="com.romanrichter.interpreter.codegen" />
-      <option name="MAIN_CLASS_NAME" value="com.romanrichter.interpreter.codegen.CompilerTest" />
-      <option name="METHOD_NAME" value="testClass3" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <envs />
-      <patterns />
-      <method />
-    </configuration>
+  <component name="RunManager" selected="JUnit.CompilerTest">
     <configuration default="false" name="CompilerTest.testClassBasic1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
@@ -743,6 +705,32 @@
       <option name="PACKAGE_NAME" value="com.romanrichter.interpreter.codegen" />
       <option name="MAIN_CLASS_NAME" value="com.romanrichter.interpreter.codegen.CompilerTest" />
       <option name="METHOD_NAME" value="testClassBasic2" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+      <method />
+    </configuration>
+    <configuration default="false" name="CompilerTest.testHeap" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="com.romanrichter.interpreter.codegen.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <module name="iterpreter" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="com.romanrichter.interpreter.codegen" />
+      <option name="MAIN_CLASS_NAME" value="com.romanrichter.interpreter.codegen.CompilerTest" />
+      <option name="METHOD_NAME" value="testHeap" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
@@ -1180,19 +1168,19 @@
       <method />
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="JUnit.CompilerTest.testClass3" />
-      <item index="1" class="java.lang.String" itemvalue="JUnit.CompilerTest.testClassBasic1" />
-      <item index="2" class="java.lang.String" itemvalue="JUnit.CompilerTest.testArraysBasic" />
-      <item index="3" class="java.lang.String" itemvalue="JUnit.CompilerTest" />
-      <item index="4" class="java.lang.String" itemvalue="JUnit.CompilerTest.testClassBasic2" />
+      <item index="0" class="java.lang.String" itemvalue="JUnit.CompilerTest.testClassBasic1" />
+      <item index="1" class="java.lang.String" itemvalue="JUnit.CompilerTest.testArraysBasic" />
+      <item index="2" class="java.lang.String" itemvalue="JUnit.CompilerTest" />
+      <item index="3" class="java.lang.String" itemvalue="JUnit.CompilerTest.testClassBasic2" />
+      <item index="4" class="java.lang.String" itemvalue="JUnit.CompilerTest.testHeap" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="JUnit.CompilerTest.testClassBasic2" />
-        <item index="1" class="java.lang.String" itemvalue="JUnit.CompilerTest.testClassBasic1" />
-        <item index="2" class="java.lang.String" itemvalue="JUnit.CompilerTest.testArraysBasic" />
-        <item index="3" class="java.lang.String" itemvalue="JUnit.CompilerTest" />
-        <item index="4" class="java.lang.String" itemvalue="JUnit.CompilerTest.testClass3" />
+        <item index="0" class="java.lang.String" itemvalue="JUnit.CompilerTest" />
+        <item index="1" class="java.lang.String" itemvalue="JUnit.CompilerTest.testHeap" />
+        <item index="2" class="java.lang.String" itemvalue="JUnit.CompilerTest.testClassBasic2" />
+        <item index="3" class="java.lang.String" itemvalue="JUnit.CompilerTest.testClassBasic1" />
+        <item index="4" class="java.lang.String" itemvalue="JUnit.CompilerTest.testArraysBasic" />
       </list>
     </recent_temporary>
   </component>
@@ -1221,7 +1209,7 @@
       <workItem from="1517347493517" duration="1995000" />
       <workItem from="1517419191767" duration="11054000" />
       <workItem from="1517596424869" duration="8680000" />
-      <workItem from="1517653685552" duration="11376000" />
+      <workItem from="1517653685552" duration="25052000" />
     </task>
     <task id="LOCAL-00001" summary="Added parsing for classes">
       <created>1517083384358</created>
@@ -1251,43 +1239,50 @@
       <option name="project" value="LOCAL" />
       <updated>1517154085594</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Test for first class is done">
+      <created>1517666495023</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1517666495023</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="CompilerTest_testClassBasic1 - 2018.02.03 at 16h 21m 37s.xml">
-      <configuration name="CompilerTest.testClassBasic1" configurationId="JUnit" />
+    <history-entry file="CompilerTest - 2018.02.03 at 22h 53m 26s.xml">
+      <configuration name="CompilerTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="CompilerTest_testClassBasic1 - 2018.02.03 at 16h 22m 09s.xml">
-      <configuration name="CompilerTest.testClassBasic1" configurationId="JUnit" />
+    <history-entry file="CompilerTest_testHeap - 2018.02.03 at 22h 42m 04s.xml">
+      <configuration name="CompilerTest.testHeap" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="CompilerTest_testClassBasic1 - 2018.02.03 at 16h 24m 39s.xml">
-      <configuration name="CompilerTest.testClassBasic1" configurationId="JUnit" />
+    <history-entry file="CompilerTest_testHeap - 2018.02.03 at 22h 45m 40s.xml">
+      <configuration name="CompilerTest.testHeap" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="CompilerTest_testClassBasic1 - 2018.02.03 at 16h 25m 40s.xml">
-      <configuration name="CompilerTest.testClassBasic1" configurationId="JUnit" />
+    <history-entry file="CompilerTest_testHeap - 2018.02.03 at 22h 46m 11s.xml">
+      <configuration name="CompilerTest.testHeap" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="CompilerTest_testClassBasic1 - 2018.02.03 at 16h 27m 00s.xml">
-      <configuration name="CompilerTest.testClassBasic1" configurationId="JUnit" />
+    <history-entry file="CompilerTest_testHeap - 2018.02.03 at 22h 46m 42s.xml">
+      <configuration name="CompilerTest.testHeap" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="CompilerTest_testClassBasic1 - 2018.02.03 at 16h 39m 13s.xml">
-      <configuration name="CompilerTest.testClassBasic1" configurationId="JUnit" />
+    <history-entry file="CompilerTest_testHeap - 2018.02.03 at 22h 47m 14s.xml">
+      <configuration name="CompilerTest.testHeap" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="CompilerTest_testClassBasic1 - 2018.02.03 at 16h 41m 38s.xml">
-      <configuration name="CompilerTest.testClassBasic1" configurationId="JUnit" />
+    <history-entry file="CompilerTest_testHeap - 2018.02.03 at 22h 48m 13s.xml">
+      <configuration name="CompilerTest.testHeap" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="CompilerTest_testClassBasic1 - 2018.02.03 at 16h 41m 52s.xml">
-      <configuration name="CompilerTest.testClassBasic1" configurationId="JUnit" />
+    <history-entry file="CompilerTest_testHeap - 2018.02.03 at 22h 49m 18s.xml">
+      <configuration name="CompilerTest.testHeap" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="CompilerTest_testClassBasic2 - 2018.02.03 at 16h 42m 16s.xml">
-      <configuration name="CompilerTest.testClassBasic2" configurationId="JUnit" />
+    <history-entry file="CompilerTest_testHeap - 2018.02.03 at 22h 51m 51s.xml">
+      <configuration name="CompilerTest.testHeap" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="CompilerTest_testClassBasic2 - 2018.02.03 at 17h 00m 08s.xml">
-      <configuration name="CompilerTest.testClassBasic2" configurationId="JUnit" />
+    <history-entry file="CompilerTest_testHeap - 2018.02.03 at 22h 52m 28s.xml">
+      <configuration name="CompilerTest.testHeap" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="71693000" />
+    <option name="totallyTimeSpent" value="85369000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="65" y="24" width="1855" height="1056" extended-state="6" />
@@ -1311,7 +1306,7 @@
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24785408" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.5203863" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -1336,29 +1331,16 @@
     <MESSAGE value="Added parsing for calling of variable methods" />
     <MESSAGE value="Added parsing for parent classes" />
     <MESSAGE value="Changed code structure to more standard" />
-    <option name="LAST_COMMIT_MESSAGE" value="Changed code structure to more standard" />
+    <MESSAGE value="Test for first class is done" />
+    <option name="LAST_COMMIT_MESSAGE" value="Test for first class is done" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/romanrichter/interpreter/codegen/interpreter/Interpreter.java</url>
-          <line>316</line>
-          <properties />
-          <option name="timeStamp" value="156" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/romanrichter/interpreter/codegen/interpreter/Interpreter.java</url>
-          <line>91</line>
-          <properties />
-          <option name="timeStamp" value="177" />
-        </line-breakpoint>
-      </breakpoints>
-      <option name="time" value="178" />
+      <option name="time" value="194" />
     </breakpoint-manager>
     <watches-manager>
       <configuration name="JUnit">
-        <watch expression="stack[stackAddress]" language="JAVA" custom="" />
+        <watch expression="stack[stackPointer]" language="JAVA" custom="" />
         <watch expression="stack" language="JAVA" custom="" />
       </configuration>
     </watches-manager>
@@ -1368,13 +1350,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/romanrichter/interpreter/codegen/parser/Parser.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/romanrichter/interpreter/codegen/Main.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-120">
@@ -1466,13 +1441,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/romanrichter/interpreter/codegen/interpreter/ImmediateType.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="36">
-          <caret line="2" column="12" selection-start-line="2" selection-start-column="12" selection-end-line="2" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="180">
@@ -1519,11 +1487,11 @@
         <state relative-caret-position="111">
           <caret line="31" column="0" selection-start-line="31" selection-start-column="0" selection-end-line="31" selection-end-column="0" />
           <folding>
-            <element signature="e#149#150#0" expanded="true" />
-            <element signature="e#169#170#0" expanded="true" />
-            <element signature="e#318#319#0" expanded="true" />
-            <element signature="e#338#339#0" expanded="true" />
-            <element signature="e#550#551#0" expanded="true" />
+            <element signature="e#149#150#0" expanded="false" />
+            <element signature="e#169#170#0" expanded="false" />
+            <element signature="e#318#319#0" expanded="false" />
+            <element signature="e#338#339#0" expanded="false" />
+            <element signature="e#550#551#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1547,11 +1515,11 @@
         <state relative-caret-position="103">
           <caret line="31" column="0" selection-start-line="31" selection-start-column="0" selection-end-line="31" selection-end-column="0" />
           <folding>
-            <element signature="e#146#147#0" expanded="true" />
-            <element signature="e#166#167#0" expanded="true" />
-            <element signature="e#317#318#0" expanded="true" />
-            <element signature="e#337#338#0" expanded="true" />
-            <element signature="e#546#547#0" expanded="true" />
+            <element signature="e#146#147#0" expanded="false" />
+            <element signature="e#166#167#0" expanded="false" />
+            <element signature="e#317#318#0" expanded="false" />
+            <element signature="e#337#338#0" expanded="false" />
+            <element signature="e#546#547#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1578,20 +1546,12 @@
         <state relative-caret-position="165">
           <caret line="24" column="0" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
           <folding>
-            <element signature="e#144#145#0" expanded="true" />
-            <element signature="e#165#166#0" expanded="true" />
-            <element signature="e#228#229#0" expanded="true" />
-            <element signature="e#249#250#0" expanded="true" />
-            <element signature="e#415#416#0" expanded="true" />
+            <element signature="e#144#145#0" expanded="false" />
+            <element signature="e#165#166#0" expanded="false" />
+            <element signature="e#228#229#0" expanded="false" />
+            <element signature="e#249#250#0" expanded="false" />
+            <element signature="e#415#416#0" expanded="false" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/romanrichter/interpreter/codegen/interpreter/SteckInstruction.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="403">
-          <caret line="41" column="0" selection-start-line="41" selection-start-column="0" selection-end-line="41" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1693,14 +1653,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/junit/junit/4.12/junit-4.12-sources.jar!/org/junit/internal/runners/model/ReflectiveCallable.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="229">
-          <caret line="13" column="0" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/romanrichter/interpreter/codegen/parser/Parser.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="162">
@@ -1709,23 +1661,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/romanrichter/interpreter/codegen/interpreter/SteckOperation.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="188">
-          <caret line="51" column="13" selection-start-line="51" selection-start-column="13" selection-end-line="51" selection-end-column="13" />
-          <folding>
-            <element signature="e#2062#2063#0" expanded="true" />
-            <element signature="e#2121#2122#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/romanrichter/interpreter/codegen/MethodCall.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="234">
           <caret line="13" column="0" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
           <folding>
-            <element signature="e#346#347#0" expanded="true" />
+            <element signature="e#346#347#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1735,7 +1676,7 @@
         <state relative-caret-position="270">
           <caret line="17" column="0" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
           <folding>
-            <element signature="e#291#292#0" expanded="true" />
+            <element signature="e#291#292#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1748,14 +1689,58 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/romanrichter/interpreter/codegen/Number.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="17" column="0" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
+          <folding>
+            <element signature="e#284#285#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/romanrichter/interpreter/codegen/Assignment.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="12" column="0" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
+          <folding>
+            <element signature="e#268#269#0" expanded="false" />
+            <element signature="e#455#456#0" expanded="false" />
+            <element signature="e#484#485#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/romanrichter/interpreter/codegen/interpreter/SteckInstruction.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="182">
+          <caret line="41" column="0" selection-start-line="41" selection-start-column="0" selection-end-line="41" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/romanrichter/interpreter/codegen/interpreter/ImmediateType.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="36">
+          <caret line="2" column="12" selection-start-line="2" selection-start-column="12" selection-end-line="2" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/romanrichter/interpreter/codegen/interpreter/SteckOperation.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="432">
+          <caret line="27" column="5" selection-start-line="27" selection-start-column="2" selection-end-line="27" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/romanrichter/interpreter/codegen/Declaration.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="180">
           <caret line="12" column="0" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
           <folding>
-            <element signature="e#143#144#0" expanded="true" />
-            <element signature="e#164#165#0" expanded="true" />
-            <element signature="e#249#250#0" expanded="true" />
+            <element signature="e#249#250#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1766,78 +1751,67 @@
           <caret line="27" column="0" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
           <folding>
             <element signature="e#799#800#0" expanded="true" />
-            <element signature="e#1391#1392#0" expanded="true" />
-            <element signature="e#1426#1427#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/romanrichter/interpreter/codegen/Constructor.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="324">
-          <caret line="18" column="0" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
+        <state relative-caret-position="342">
+          <caret line="19" column="0" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
           <folding>
-            <element signature="e#604#605#0" expanded="true" />
+            <element signature="e#569#570#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/romanrichter/interpreter/codegen/Number.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/romanrichter/interpreter/codegen/ArrayLength.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="17" column="0" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
+        <state relative-caret-position="90">
+          <caret line="5" column="20" selection-start-line="5" selection-start-column="20" selection-end-line="5" selection-end-column="20" />
           <folding>
-            <element signature="e#284#285#0" expanded="true" />
+            <element signature="e#155#156#0" expanded="true" />
+            <element signature="e#177#178#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/romanrichter/interpreter/codegen/Assignment.java">
+    <entry file="jar://$MAVEN_REPOSITORY$/junit/junit/4.12/junit-4.12-sources.jar!/org/junit/internal/runners/model/ReflectiveCallable.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
+        <state relative-caret-position="216">
           <caret line="12" column="0" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/romanrichter/interpreter/codegen/CodeGenerationVisitor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="446" column="27" selection-start-line="446" selection-start-column="27" selection-end-line="446" selection-end-column="27" />
           <folding>
-            <element signature="e#268#269#0" expanded="true" />
-            <element signature="e#455#456#0" expanded="true" />
-            <element signature="e#484#485#0" expanded="true" />
+            <element signature="imports" expanded="true" />
+            <element signature="e#1390#1407#0" expanded="true" />
+            <element signature="e#1476#1493#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/romanrichter/interpreter/codegen/interpreter/Interpreter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="146">
+          <caret line="268" column="0" selection-start-line="268" selection-start-column="0" selection-end-line="268" selection-end-column="0" />
+          <folding>
+            <element signature="e#1534#1535#0" expanded="true" />
+            <element signature="e#1579#1580#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/com/romanrichter/interpreter/codegen/CompilerTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="378">
-          <caret line="441" column="12" selection-start-line="441" selection-start-column="12" selection-end-line="441" selection-end-column="12" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/romanrichter/interpreter/codegen/interpreter/Interpreter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="231">
-          <caret line="315" column="0" selection-start-line="315" selection-start-column="0" selection-end-line="315" selection-end-column="0" />
-          <folding>
-            <element signature="e#1534#1535#0" expanded="true" />
-            <element signature="e#1579#1580#0" expanded="true" />
-            <element signature="e#2103#2104#0" expanded="true" />
-            <element signature="e#2158#2159#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/romanrichter/interpreter/codegen/CodeGenerationVisitor.java">
-      <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="334">
-          <caret line="383" column="45" selection-start-line="383" selection-start-column="45" selection-end-line="383" selection-end-column="45" />
-          <folding>
-            <element signature="e#1539#1556#0" expanded="true" />
-            <element signature="e#2837#2838#0" expanded="true" />
-            <element signature="e#2866#2867#0" expanded="true" />
-            <element signature="e#12197#12198#0" expanded="true" />
-            <element signature="e#12254#12255#0" expanded="true" />
-            <element signature="e#15874#15875#0" expanded="true" />
-            <element signature="e#15917#15918#0" expanded="true" />
-          </folding>
+          <caret line="460" column="18" selection-start-line="460" selection-start-column="18" selection-end-line="460" selection-end-column="18" />
+          <folding />
         </state>
       </provider>
     </entry>
