@@ -2,20 +2,20 @@ package com.romanrichter.interpreter.codegen;
 
 public class ObjectInitializer extends Expression {
 
-    private Expression[] expressions;
-    private String functionName;
+    private Expression[] arguments;
+    private String className;
 
-    public ObjectInitializer(String functionName, Expression[] expressions) {
-        this.functionName = functionName;
-        this.expressions = expressions;
+    public ObjectInitializer(String className, Expression[] arguments) {
+        this.className = className;
+        this.arguments = arguments;
     }
 
-    public Expression[] getExpressions() {
-        return expressions;
+    public Expression[] getArguments() {
+        return arguments;
     }
 
-    public String getFunctionName() {
-        return functionName;
+    public String getClassName() {
+        return className;
     }
 
     @Override

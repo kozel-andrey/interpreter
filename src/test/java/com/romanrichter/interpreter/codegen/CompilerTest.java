@@ -406,12 +406,12 @@ public class CompilerTest {
         "  foo = new Foo();\n" + 
         "  return foo.x();\n" + 
         "}";
-//    Parser p = new Parser(code);
-//    Program ast = p.parse();
-//    System.out.println(ast);
+    Parser p = new Parser(code);
+    Program ast = p.parse();
+    System.out.println(ast);
     int[] assembly = Compiler.compile(code);
-//    System.out.println("######################");
-//    System.out.println(Interpreter.programToString(assembly));
+    System.out.println("######################");
+    System.out.println(Interpreter.programToString(assembly));
     int retVal = Interpreter.execute(assembly);
     assertEquals(100, retVal);
   }
@@ -492,8 +492,8 @@ public class CompilerTest {
     Program ast = p.parse();
     System.out.println(ast);
     int[] assembly = Compiler.compile(code);
-//    System.out.println("######################");
-//    System.out.println(Interpreter.programToString(assembly));
+    System.out.println("######################");
+    System.out.println(Interpreter.programToString(assembly));
     int retVal = Interpreter.execute(assembly);
     assertEquals(408, retVal);
   }
@@ -554,6 +554,8 @@ public class CompilerTest {
         "}";
     int[] assembly = Compiler.compile(code);
     int retVal = Interpreter.execute(assembly);
+    System.out.println("######################");
+    System.out.println(Interpreter.programToString(assembly));
     assertEquals(20, retVal);
   }
   

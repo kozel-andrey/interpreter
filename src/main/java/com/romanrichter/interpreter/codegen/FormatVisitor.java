@@ -393,11 +393,11 @@ public class FormatVisitor extends Visitor {
 
     @Override
     public void visit(ObjectInitializer initializer) {
-        result.append("new " + initializer.getFunctionName() + "(");
-        for (int i = 0; i < initializer.getExpressions().length; i++) {
+        result.append("new " + initializer.getClassName() + "(");
+        for (int i = 0; i < initializer.getArguments().length; i++) {
             if (i > 0)
                 result.append(", ");
-            append(initializer.getExpressions()[i]);
+            append(initializer.getArguments()[i]);
         }
         result.append(')');
     }

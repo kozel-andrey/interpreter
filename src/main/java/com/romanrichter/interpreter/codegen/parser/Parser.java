@@ -712,7 +712,7 @@ public class Parser {
                 functions.add(function);
                 before = from;
             }
-            Constructor parsedConstructor = parseConstuctor(className);
+            Constructor parsedConstructor = parseConstructor(className);
             if (parsedConstructor == null) {
                 from = before;
             } else {
@@ -741,7 +741,7 @@ public class Parser {
         return null;
     }
 
-    private Constructor parseConstuctor(String className) {
+    private Constructor parseConstructor(String className) {
         if (!isConstructor(className)) {
             return null;
         }

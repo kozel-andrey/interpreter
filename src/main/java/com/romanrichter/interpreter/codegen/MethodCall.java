@@ -2,15 +2,15 @@ package com.romanrichter.interpreter.codegen;
 
 public class MethodCall extends Expression {
 
-    private Expression variable;
+    private Variable variable;
     private Expression call;
 
-    public MethodCall(Expression variable, Expression call) {
+    public MethodCall(Variable variable, Expression call) {
         this.variable = variable;
         this.call = call;
     }
 
-    public Expression getVariable() {
+    public Variable getVariable() {
         return variable;
     }
 
