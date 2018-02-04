@@ -110,10 +110,12 @@ public class CodeGenerationVisitor extends Visitor {
     public void visit(Variable variable) {
         Integer variableLocation = locals.get(variable.getName());
 
-        if (variableLocation == null)
+        if (variableLocation == null) {
             variableLocation = classVariables.get(variable.getName());
-        if (variableLocation == null)
-            throw new RuntimeException("Unknown variable '" + variable.getName() + "'");
+
+            if (variableLocation == null)
+                throw new RuntimeException("Unknown variable '" + variable.getName() + "'");
+        }
 
         add(LDS.encode(variableLocation));
     }
@@ -234,10 +236,11 @@ public class CodeGenerationVisitor extends Visitor {
     public void visit(Assignment assignment) {
         assignment.getExpression().accept(this);
         Integer location = locals.get(assignment.getName());
-        if (location == null)
+        if (location == null) {
             location = classVariables.get(assignment.getName());
-        if (location == null)
-            throw new RuntimeException("Unknown variable " + assignment.getName());
+            if (location == null)
+                throw new RuntimeException("Unknown variable " + assignment.getName());
+        }
 
         add(STS.encode(location));
     }
@@ -429,18 +432,20 @@ public class CodeGenerationVisitor extends Visitor {
 
     @Override
     public void visit(CustomClass customClass) {
-        locals.put("$alloc_class", instructions.size());
+        classVariables.put("$alloc_class", instructions.size());
+        add(ALLOC.encode(1));
         classFunctions.put(customClass.getName(), new ArrayList<FunctionDesc>());
-
+        classVariables.clear();
         for (Declaration d : customClass.getDeclarations()) {
             visitDeclarations(d.getNames());
+            int offset = classVariables.size() + 1;
             for (int i = 0; i < d.getNames().length; i++) {
                 if (classVariables.containsKey(d.getNames()[i]))
                     throw new RuntimeException("Variable '" + d.getNames()[i] + "' is already defined");
-                classVariables.put(d.getNames()[i], d.getNames().length + i);
+                classVariables.put(d.getNames()[i], offset + i);
             }
         }
-
+        locals.clear();
         customClass.getConstructor().accept(this);
 
         for (Function f : customClass.getFunctions()) {
@@ -475,6 +480,9 @@ public class CodeGenerationVisitor extends Visitor {
         for (Statement statement : constructor.getStatements()) {
             statement.accept(this);
         }
+
+        add(LDI.encode(0));
+        add(RETURN.encode(0));
     }
 
     @Override
